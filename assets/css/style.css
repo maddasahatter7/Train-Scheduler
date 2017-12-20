@@ -32,4 +32,9 @@ body {
         border-color: black;
         color: rgba(238, 238, 138, 0.9);
         font-weight: lighter;
+        text-shadow: 4px 4px 4px #000000;
+    }
+    .th {
+        font-weight: lighter;
+        font-size: 4em;
     }
