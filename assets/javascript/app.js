@@ -29,6 +29,7 @@
   var firstTimeConverted;
   // moment current time method
   var currentTime = moment();
+  var firstInstanceOfTime = 1200;
   console.log(currentTime);
   var diffTime;
   var tRemainder;
@@ -43,19 +44,19 @@ $("#btn-submit").on("click", function(event) {
     destination = $("#dest").val().trim();
     frequency = $("#freq").val().trim();
     firstTrainTime = $("#fstTrn").val().trim();
-    // Intitial value for time, having errors trying to format correctly
+    // First time minus a year bc we are avoiding dublicate times
     firstTimeConverted = moment(firstTrainTime, "HH:mm").subtract(1, "years");
     console.log(firstTimeConverted);
-    // Trying to take the current time and get the difference of the firstTimeConverted
+    // Differences between times 
     diffTime = currentTime.diff(moment(firstTimeConverted), "minutes");
     console.log(diffTime);
-    // Trying to get the difference between the times between train rides
+    // Trying to get the difference between the times remaining between train rides
     tRemainder = diffTime % frequency;
     console.log(tRemainder);
       // Trying to get the difference between the times between train rides, still not working correctly
     minutesUntilTrain = frequency - tRemainder;
     console.log(minutesUntilTrain);
-    // Adding current time to next train
+    // Adding current time of the next train
     nextTrain = moment().add(minutesUntilTrain, "minutes");
     console.log(nextTrain);
     // Finally formatting the time for Next Arrival
@@ -91,16 +92,17 @@ $("#btn-submit").on("click", function(event) {
 database.ref().on("child_added", function(snapshot){
     // Need to know when first train arrives and how often 
 // Train Infomations :)
-
  var childDestination = snapshot.val().destination;
  var childFrequency = snapshot.val().frequency;
  var childTrainTime = snapshot.val().firstTrainTime;
  var childTrainName = snapshot.val().trainName;
  var childNextFormat = snapshot.val().nextTrainFormat;
+ // Need to figure this out ????????
 //  var childMinutesUntilTrain = snapshot.val().minutesUntilTrain;
 
  console.log(childDestination, childFrequency, childTrainTime, childTrainName, childNextFormat);
 // grabbing last object/child from database and appending to the DOM
+// Need to fix equation and append childMinutesUntilTrain
  $("#table").append(
     "<tr><td>" + childTrainName + "</td><td>" + childDestination 
     + "</td><td>" + childFrequency + "</td><td>"
