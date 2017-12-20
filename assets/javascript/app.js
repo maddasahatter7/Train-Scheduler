@@ -1,4 +1,13 @@
-  // Initialize Firebase
+  
+  // Global Firebase Moment 
+  // Steps to complete:
+  
+  // 1. Initialize Firebase
+  // 2. Create button for adding new train arrivals, departures, destination ect - then update the html + update the database
+  // 3. Create a way to retrieve train information converting time with moment
+  // 4. Figure out moment
+  // 5. Take values from input elements and put them into an object and push them to firebase
+  // 6. Take "last child"/object from firebase and append it to DOM using a callback function and attaching the input value
   var config = {
     apiKey: "AIzaSyAARDratt8EoVJUKuyOdBDAMvBfgqXrkOY",
     authDomain: "train-scheduler-f9c93.firebaseapp.com",
