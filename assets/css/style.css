@@ -12,7 +12,18 @@ body {
 
     .jumbotron {
         background: rgba(190, 75, 75, 0.3);
-        color: rgba(238, 238, 138, 0.733);
+    }
+    h1{
+        color: rgba(238, 238, 138, 0.9)!important;
         text-shadow: 3px 3px 5px #000000;
     }
-    
+    h2 {
+        color: rgba(238, 238, 138, 0.9);
+        font-size: 1.5em;
+        text-shadow: 4px 4px 6px #000000;
+    }
+    h3 {
+        color: rgba(238, 238, 138, 0.9);
+        font-size: 1.2em;
+        text-shadow: 4px 4px 4px #000000;
+    }
