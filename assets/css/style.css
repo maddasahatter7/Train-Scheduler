@@ -9,3 +9,7 @@ body {
     background-position: right top;
     background-attachment: fixed;
     }
+
+    .jumbotron {
+        background: rgba(190, 75, 75, 0.3);
+    }
