@@ -34,9 +34,15 @@ body {
         font-weight: lighter;
         text-shadow: 4px 4px 4px #000000;
     }
+    .panel-heading{
+        background: rgba(2, 1, 1, 0.6);
+    }
+
+
     /* .th { */
         /* !!!!! COME BACK TO ME AND FIGURE ME OUT !!!!!
         font-weight: lighter;
         font-size: 4em !important; */
     /* } */
   
+    /* work on fixing panel heading background colors */
