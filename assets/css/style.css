@@ -34,7 +34,9 @@ body {
         font-weight: lighter;
         text-shadow: 4px 4px 4px #000000;
     }
-    .th {
+    /* .th { */
+        /* !!!!! COME BACK TO ME AND FIGURE ME OUT !!!!!
         font-weight: lighter;
-        font-size: 4em;
-    }
+        font-size: 4em !important; */
+    /* } */
+  
