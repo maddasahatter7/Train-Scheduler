@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,22 +19,69 @@
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js">
 </script>
-    <br>
-    <div class="container">
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://parismap360.com/paris-metro-map#.Wjs09FQ-fow" target="_blank" >Métro de Paris</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="http://www.parishotels.com/" target="_blank" >Find a Hotel <span class="sr-only">(current)</span></a></li>
+                  <li><a href="https://www.parisperfect.com/" target="_blank" >Rent an Apartment</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Places to See <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.louvre.fr/en" target="_blank" >Musée du Louvre</a></li>
+                      <li><a href="http://www.musee-orsay.fr/en/home.html" target="_blank" >Musée d’Orsay</a></li>
+                      <li><a href="http://www.fondationlouisvuitton.fr/en.html" target="_blank" >Fondation Louis Vuitton</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="https://www.toureiffel.paris/en" target="_blank" >The Eiffel Tower</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="https://www.deyrolle.com/" target="_blank" >Deyrolle</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://parismap360.com/paris-airport-map#map43" target="_blank" >Airport</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food and Wine <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.restaurantsparisiens.com/restaurant-chez-georges/" target="_blank" >Chez Georges</a></li>
+                      <li><a href="https://parisbymouth.com/le-baratin-2/" target="_blank" >Le Baratin</a></li>
+                      <li><a href="http://www.vingtheuresvin.com/" target="_blank" >Vingt Heures Vin</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://o-chateau.com/" target="_blank" >Ô Chateau</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+    <div class="container">         
+     <br>
   <div class="jumbotron text-center">
     <h1>Métro de Paris</h1>
     <h2>"Rester, c’est exister, mais voyager, c’est vivre”</h2>
     <h3>-Gustave Nadaud</h3>
   </div>
   <div class="panel text-center">
-      <div class="panel-heading">Current Train Schedule</div>
+      <div class="panel-heading">Horaire de Train Actuel</div>
       <table id= "table" class="table">
         <tr>
-          <th>Train Name:</th>
+          <th>Nom du Train:</th>
           <th>Destination:</th>
-          <th>Frequency (min):</th>
-          <th>Next Arrival:</th>
-          <th>Minutes Away:</th>
+          <th>La Fréquence (min):</th>
+          <th>Prochain Arrivée:</th>
+          <th>Minutes Jusqu'à L'arrivée:</th>
         </tr>
         <tbody>
             <tr>
@@ -47,12 +94,13 @@
         </tbody>
     </table>
       </div>
-    <div class="panel second">
-      <div class="panel-heading">Add Train</div>
+      <div class="col-md-5">
+      <div class="panel second">
+      <div class="panel-heading">Ajouter un Train</div>
              <br>
                 <form role="form">
                   <div class="form-group">
-                    <label for="enter-name">Train Name:</label>
+                    <label for="enter-name">Nom du Train:</label>
                     <input class="form-control" id="trnName" type="text">
                   </div>
                   <div class="form-group">
@@ -60,17 +108,18 @@
                     <input class="form-control" id="dest" type="text">
                   </div>
                   <div class="form-group">
-                    <label for="enter-arrival">First Train Time(HH:mm - Military Time</label>
+                    <label for="enter-arrival">Premier Train (HH:mm - Temps Militaire):</label>
                     <input class="form-control" id="fstTrn" type="number">
                   </div>
                   <div class="form-group">
-                      <label for="enter-time">Frequency (min):</label>
+                      <label for="enter-time">La Fréquence (min):</label>
                       <input class="form-control" id="freq" type="number">
                     </div>
-                  <button class="btn btn-default" id="btn-submit" type="submit">Submit</button>
+                  <button class="btn btn-default" id="btn-submit" type="submit">Rechercher</button>
                 </form>
                   
     </div>
+</div>
 </div>
     
     <!-- linked files -->

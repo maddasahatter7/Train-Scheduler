@@ -79,7 +79,7 @@ $("#btn-submit").on("click", function(event) {
 
    
     // yay we got one!
-    alert("You've booked a train ride!");
+    alert("Vous avez réservé votre ticket de métro!");
     // Clear out input boxes after submit
     trainName = $("#trnName").val("");
     destination = $("#dest").val("");
