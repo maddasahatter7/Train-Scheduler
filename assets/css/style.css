@@ -40,10 +40,26 @@ body {
     .vid {
         float: right;
     }
-    .col-md-5 {
-        float: left;
+    .panel.second {
+       float: left;
     }
 
+    .footer {
+        position: fixed;
+        font-size: 12px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(2, 1, 1, 0.6);
+        color: rgba(255, 255, 255, 0.452);
+        text-align: center;
+     }
+
+     .thumbnail {
+         float: right;
+         background: rgba(190, 75, 75, 0.3);
+         border-color: black;
+     }
     /* .th { */
         /* !!!!! COME BACK TO ME AND FIGURE ME OUT !!!!!
         font-weight: lighter;
