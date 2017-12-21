@@ -37,7 +37,12 @@ body {
     .panel-heading{
         background: rgba(2, 1, 1, 0.6);
     }
-
+    .vid {
+        float: right;
+    }
+    .col-md-5 {
+        float: left;
+    }
 
     /* .th { */
         /* !!!!! COME BACK TO ME AND FIGURE ME OUT !!!!!
