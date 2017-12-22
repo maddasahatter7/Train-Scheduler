@@ -29,7 +29,7 @@
   var firstTimeConverted;
   // moment current time method
   var currentTime = moment();
-  var firstInstanceOfTime = 1200;
+  var firstInstanceOfTime = "3:00";
   console.log(currentTime);
   var diffTime;
   var tRemainder;
@@ -96,16 +96,17 @@ database.ref().on("child_added", function(snapshot){
  var childFrequency = snapshot.val().frequency;
  var childTrainTime = snapshot.val().firstTrainTime;
  var childTrainName = snapshot.val().trainName;
- var childNextFormat = snapshot.val().nextTrainFormat;
+ var childNextFormat = snapshot.val().nextTrainFormat
+ var childMinutesAway = snapshot.val().minutesUntilTrain;
  // Need to figure this out ????????
 //  var childMinutesUntilTrain = snapshot.val().minutesUntilTrain;
 
- console.log(childDestination, childFrequency, childTrainTime, childTrainName, childNextFormat);
+ console.log(childDestination, childFrequency, childTrainTime, childTrainName, );
 // grabbing last object/child from database and appending to the DOM
 // Need to fix equation and append childMinutesUntilTrain
  $("#table").append(
     "<tr><td>" + childTrainName + "</td><td>" + childDestination 
     + "</td><td>" + childFrequency + "</td><td>"
     + childNextFormat + "</td><td>"
-    + childTrainTime + "</td></tr>");
+    + childMinutesAway + "</td></tr>");
 });

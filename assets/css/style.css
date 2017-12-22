@@ -37,11 +37,12 @@ body {
     .panel-heading{
         background: rgba(2, 1, 1, 0.6);
     }
-    .vid {
-        float: right;
-    }
+ 
+   
     .panel.second {
        float: left;
+       padding-left: (.5)!important;
+       padding-right: (.5) !important;
     }
 
     .footer {
@@ -60,10 +61,3 @@ body {
          background: rgba(190, 75, 75, 0.3);
          border-color: black;
      }
-    /* .th { */
-        /* !!!!! COME BACK TO ME AND FIGURE ME OUT !!!!!
-        font-weight: lighter;
-        font-size: 4em !important; */
-    /* } */
-  
-    /* work on fixing panel heading background colors */
